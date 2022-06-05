@@ -1,0 +1,111 @@
+* {
+    background-color: black;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Verdana', sans-serif; */  
+}
+
+h1, button {
+    color: #e0e0e0;
+}
+
+h1 {
+    font: 2rem,1.2 Georgia;
+    margin-bottom: 1em;
+}
+
+.page {
+    max-width: 800px;
+    min-width: 400px;
+    padding: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    user-select: none;
+}
+
+.fifteen {
+    position: relative;
+
+    width: 100%;
+    min-width: 220px;
+    min-height: 220px;
+    padding-bottom: 100%;
+    margin-bottom: 1.5rem;
+
+    background: #000;
+
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.item {
+    outline: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    cursor: pointer;
+
+    width: 25%;
+    min-width: 50px;
+    height: 25%;
+    min-height: 50px;
+
+    font-size: 2.4rem;
+    font-weight: bold;
+
+    box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.2);
+
+    transition: transform 0.2s;
+}
+
+.item span {
+    transition: all 0.5s;
+}
+
+.fifteenWon .item span {
+    filter: brightness(200%);
+    box-shadow: 0px 0px 15px 2px #cf2ed5;
+}
+
+.item .itemVal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 84%;
+    height: 84%;
+    margin: 8%;
+
+    font-size: 2.4rem;
+
+    border: 1px solid #cf2ed5;
+    border-radius: 5px; 
+}
+
+.button {
+    padding: 2% 3%;
+    font: 1.2rem 'Georgia', serif;
+
+    border: 1px solid #fff;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: all 0.3s linear;
+}
+
+.button:hover {
+    border-color: #cf2ed5;
+    background-color: rgba(207, 46, 213, 0.05);
+    box-shadow: 0px 0px 20px 1px #cf2ed596;
+}
+
+
+
+@media (max-width: 500px) {
+    .item .itemVal {
+        font-size: 1.6rem;
+    }
+}
